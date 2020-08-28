@@ -1,0 +1,18 @@
+spring:
+  main:
+    web-application-type: reactive
+  cache:
+    type: redis
+    redis:
+      time-to-live: 300000
+  redis:
+    host: localhost
+    port: 6379
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration
+auth:
+  jwt:
+    secretKey: mySecretKey
+    issuer: odysseymoon
+    expireDays: 30
