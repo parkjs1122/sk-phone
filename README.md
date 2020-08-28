@@ -1,1 +1,1 @@
-# sk-phone
+# skphone
